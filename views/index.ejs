@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Programming Quotes</title>
+        <meta name="author" content="Monica Spycher">
+        <meta name="description" content="Random Programming Quotes">
+        <meta name="keywords" content="Programming, Quotes, Funny">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+    </head>
+
+    <body>
+        <h1>Programming Quotes </h1>
+        <div class="card">
+            <p> <%=locals.quote %></p>
+        </div>
+        <p class="author"> <%=locals.author%></p>
+        <form action="/next" method="GET">
+            <button type="submit" value="Delete">Next</button>
+        </form>
+    </body>
+</html>

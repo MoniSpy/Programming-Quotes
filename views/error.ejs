@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Oh noo!!</title>
+    <meta name="author" content="Monica Spycher">
+    <meta name="description" content="Random Programming Quotes">
+    <meta name="keywords" content="Programming, Quotes, Funny">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    </head>
+
+    <body>
+    <h1>Ups!</h1>
+        <div class="card">
+            <p> Status error <%=locals.status %><br><br><br> 
+                <% if (locals.status==429){%>
+            You have made too many requests to the API, please Wait 60 minutes and try again.</p> 
+        <%  } else { %>
+            <%=locals.message %></p>
+        <%}%>   
+        </div>
+    </body>
+</html>
